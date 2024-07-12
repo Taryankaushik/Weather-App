@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="flex justify-center items-center h-screen">
+    <div class="container flex bg-back bg-cover bg-no-repeat bg-center w-3/4 h-[90vh] overflow-hidden">
+        <div id="changeBackImage"
+            class="hidden bg-cover bg-center bg-no-repeat h-full w-[64%] text-white sm:flex items-end justify-between flex-col">
+            <div class="text-right mr-10 mt-12">
+                <h1 id="location" class="text-5xl font-bold font-sans"></h1>
+                <h2 id="country" class="text-5xl font-bold font-sans"></h2>
+            </div>
+            <div class="flex items-center justify-between w-full mb-14">
+                <div class="ml-10">
+                    <p id="time" class="text-6xl font-sans font-light"></p>
+                    <p id="date" class="text-3xl tracking-widest font-sans font-light mt-4"></p>
+                </div>
+                <div>
+                    <h1 id="temp" class="text-9xl mr-5 font-sans "></h1>
+                </div>
+            </div>
+        </div>
+        <div class="bg-back bg-cover bg-no-repeat bg-left h-full w-[100%] sm:w-[36%] text-white">
+            <div class="h-full w-full backdrop-brightness-[.3] pt-4 px-11 pb-0">
+                <div class="w-full flex flex-col items-center justify-between border-b-2 gap-5">
+                    <img class="h-32 border-none outline-none" id="icon" src="">
+                    <p id="weather_type" class="text-6xl font-sans pb-5"></p>
+                </div>
+                <div class="mt-5">
+                    <form id="searchBtn" action="" class="flex items-center justify-between">
+                        <input id="city"
+                            class="placeholder:text-2xl placeholder:pl-5 placeholder:text-white outline-none border-b-2 bg-transparent w-full pb-3"
+                            type="text" placeholder="Search any city">
+                        <button type="submit" class="h-14 w-16 ml-2 bg-transparent border-none rounded-full">
+                            <span class="material-icons text-5xl">search</span>
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <p class="flex items-center justify-center gap-7 border-b mt-4 pb-4 text-2xl font-semibold">
+                        <span id="loc"><span id="count"></span></span>
+                    </p> 
+                    <p class="flex items-center justify-between gap-7 border-b py-4 text-2xl font-semibold">
+                        Temperature
+                        <span id="Temperature"></span>
+                    </p>
+                    <p class="flex items-center justify-between gap-7 border-b py-4 text-2xl font-semibold">
+                        Humidity
+                        <span id="humidity"></span>
+                    </p>
+                    <p class="flex items-center justify-between gap-7 border-b py-4 text-2xl font-semibold">
+                        Visibility
+                        <span id="Visibility"></span>
+                    </p>
+                    <p class="flex items-center justify-between gap-7 py-4 text-2xl font-semibold">
+                        Wind Speed
+                        <span id="Wind"></span>
+                    </p>    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
